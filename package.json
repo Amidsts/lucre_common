@@ -1,5 +1,5 @@
 {
-  "name": "Lucre-Common",
+  "name": "lucre-common",
   "version": "1.0.0",
   "description": "A shared utility library for Lucre application. Designed to streamline development and ensure consistency across services.",
   "main": "./build/index.js",

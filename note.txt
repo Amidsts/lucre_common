@@ -1,0 +1,4 @@
+Steps to build an npm package
+- npm build
+- push the code to a remote REPO
+- npm publish
