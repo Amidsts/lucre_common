@@ -17,10 +17,5 @@
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true
   },
-  "include": [
-    "src/**/*",
-    "test-connection/src/rabbit-mq/consumer.ts",
-    "test-connection/src/rabbit-mq/producer.ts"
-  ],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "build"]
 }
