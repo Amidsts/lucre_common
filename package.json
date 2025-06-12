@@ -8,8 +8,7 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc",
-    "publish": "publish"
+    "build": "tsc"
   },
   "author": "Amidsts",
   "license": "UNLICENSED",
