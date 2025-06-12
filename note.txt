@@ -1,4 +1,11 @@
 Steps to build an npm package
 - npm build
 - push the code to a remote REPO
+- npm version <patch/minor/major>
 - npm publish
+
+To update package.json version use:
+
+npm version patch   # 1.0.0 → 1.0.1 >> bug fixes
+npm version minor   # 1.0.0 → 1.1.0 >> new features (backward compatible)
+npm version major  # 1.0.0 → 2.0.0 >> breaking changes
