@@ -1,7 +1,7 @@
 export declare class ServerError extends Error {
     name: string;
     statusCode: number;
-    constructor(message?: string, isOperational?: boolean);
+    constructor(message?: string);
 }
 export declare class BadRequestError extends ServerError {
     constructor(message?: string);

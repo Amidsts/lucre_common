@@ -33,9 +33,6 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.rmq = exports.utils = exports.logger = exports.errors = exports.middlewares = void 0;
-exports.middlewares = __importStar(require("./middlewares/require-auth"));
-exports.errors = __importStar(require("./utils/errors"));
-exports.logger = __importStar(require("./utils/logger"));
-exports.utils = __importStar(require("./utils/types"));
-exports.rmq = __importStar(require("./amqplib/src"));
+exports.qInterfaces = exports.qm = void 0;
+exports.qm = __importStar(require("./queue_manager"));
+exports.qInterfaces = __importStar(require("./queue_interfaces"));
