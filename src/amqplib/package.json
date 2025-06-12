@@ -1,0 +1,31 @@
+{
+  "name": "rmq",
+  "version": "1.0.0",
+  "description": "A shared utility library for Lucre application. Designed to streamline development and ensure consistency across services.",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Amidsts",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "jsonwebtoken": "^9.0.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "^5.7.3"
+  }
+}

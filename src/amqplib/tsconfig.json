@@ -8,19 +8,19 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "declaration": true,
     "incremental": false,
-    "rootDir": "src",
-    "outDir": "build",
+    // "rootDir": "src",
+    // "outDir": "build",
     "noImplicitAny": false,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "lib": ["es2018"],
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true
-  },
-  "include": [
-    "src/**/*",
-    "test-connection/src/rabbit-mq/consumer.ts",
-    "test-connection/src/rabbit-mq/producer.ts"
-  ],
-  "exclude": ["node_modules", "dist"]
+  }
+  // "include": [
+  //   "src/**/*",
+  //   "test-connection/src/rabbit-mq/consumer.ts",
+  //   "test-connection/src/rabbit-mq/producer.ts"
+  // ]
+  // "exclude": ["node_modules", "dist"]
 }
