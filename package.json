@@ -8,7 +8,8 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf build && tsc",
+    "lint": "eslint src --ext .ts"
   },
   "author": "Amidsts",
   "license": "UNLICENSED",
