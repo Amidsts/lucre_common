@@ -7,6 +7,7 @@ export interface RpcPayload {
     error?: any;
 }
 export declare const subscribers: {
-    service2: string;
-    service1: string;
+    lucre_wallet: string;
+    lucre_auth: string;
+    lucre_notification: string;
 };

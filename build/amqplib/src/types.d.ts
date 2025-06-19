@@ -1,5 +1,7 @@
 export interface RpcManagerConfig {
-    subscribers: SubscriberConfig<any, any>[];
+    questionSubscriberConfigs: SubscriberConfig<any, any>[];
+    taskSubscriberConfigs: SubscriberConfig<any, any>[];
+    broadcastSubscriberConfigs: SubscriberConfig<any, any>[];
 }
 export interface RpcConfig {
     subscriber: string;
@@ -8,4 +10,19 @@ export interface RpcConfig {
 export interface SubscriberConfig<Request, Response> {
     config: RpcConfig;
     onMessageReceived: (payload: Request) => Promise<Response> | Response;
+}
+export interface BroadcastRpcConfig {
+    publisher: string;
+    subscriber?: string;
+    message: string;
+}
+export interface BroadcastSubscriberConfig<Request, Response> {
+    config: BroadcastRpcConfig;
+    onMessageReceived: (payload: Request) => Promise<Response> | Response;
+}
+export declare enum Publishers {
+    LUCRE_AUTH = "LUCRE_AUTH",
+    LUCRE_WALLET = "LUCRE_WALLET",
+    LUCRE_NOTIFICATION = "LUCRE_NOTIFICATION",
+    LUCRE_TRANSACTION = "LUCRE_TRANSACTION"
 }
