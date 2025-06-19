@@ -9,6 +9,7 @@ export interface RpcPayload {
 }
 
 export const subscribers = {
-  service2: "service2",
-  service1: "service1",
-};
+  lucre_wallet: 'LUCRE-WALLET',
+  lucre_auth: 'LUCRE-AUTH',
+  lucre_notification:'LUCRE-NOTIFICATION'
+}
