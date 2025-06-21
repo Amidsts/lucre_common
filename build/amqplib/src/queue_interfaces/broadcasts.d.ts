@@ -1,5 +1,6 @@
 import { Publishers } from '../types';
 export interface newUserRequest {
+    id: string;
     firstName: string;
     lastName: string;
     fullName: string;

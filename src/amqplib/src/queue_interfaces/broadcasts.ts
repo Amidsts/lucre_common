@@ -2,6 +2,7 @@ import { Publishers } from '../types';
 
 //new user
 export interface newUserRequest {
+  id: string;
   firstName: string;
   lastName: string;
   fullName: string;
