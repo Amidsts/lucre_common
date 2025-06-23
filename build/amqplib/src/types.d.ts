@@ -1,7 +1,7 @@
 export interface RpcManagerConfig {
     questionSubscriberConfigs: SubscriberConfig<any, any>[];
     taskSubscriberConfigs: SubscriberConfig<any, any>[];
-    broadcastSubscriberConfigs: SubscriberConfig<any, any>[];
+    broadcastSubscriberConfigs: BroadcastSubscriberConfig<any>[];
 }
 export interface RpcConfig {
     subscriber: string;
@@ -16,9 +16,9 @@ export interface BroadcastRpcConfig {
     subscriber?: string;
     message: string;
 }
-export interface BroadcastSubscriberConfig<Request, Response> {
+export interface BroadcastSubscriberConfig<Request> {
     config: BroadcastRpcConfig;
-    onMessageReceived: (payload: Request) => Promise<Response> | Response;
+    onMessageReceived: (payload: Request) => any;
 }
 export declare enum Publishers {
     LUCRE_AUTH = "LUCRE_AUTH",

@@ -86,7 +86,7 @@ export class TaskSubscriber {
 export class BroadcastSubscriber {
   constructor(private channel: Channel) {}
 
-  async subscribe(rpcConfig: BroadcastSubscriberConfig<any, any>) {
+  async subscribe(rpcConfig: BroadcastSubscriberConfig<any>) {
     const exchangeName = 'lucre-broadcast';
     const { exchange } = await this.channel.assertExchange(
       exchangeName,
@@ -114,6 +114,7 @@ export class BroadcastSubscriber {
           this.channel.ack(message as ConsumeMessage);
         } catch (error: any) {
           this.channel.nack(message as ConsumeMessage);
+
           console.log(
             'Broadcast subscriber error',
             { error: error.message },

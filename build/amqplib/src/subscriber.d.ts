@@ -16,5 +16,5 @@ export declare class TaskSubscriber {
 export declare class BroadcastSubscriber {
     private channel;
     constructor(channel: Channel);
-    subscribe(rpcConfig: BroadcastSubscriberConfig<any, any>): Promise<void>;
+    subscribe(rpcConfig: BroadcastSubscriberConfig<any>): Promise<void>;
 }

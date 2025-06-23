@@ -1,7 +1,7 @@
 export interface RpcManagerConfig {
   questionSubscriberConfigs: SubscriberConfig<any, any>[]; //one subscriber, many publishers
   taskSubscriberConfigs: SubscriberConfig<any, any>[]; //one subscriber, many publishers
-  broadcastSubscriberConfigs: SubscriberConfig<any, any>[]; //one publisher, many subscribers
+  broadcastSubscriberConfigs: BroadcastSubscriberConfig<any>[]; //one publisher, many subscribers
 }
 
 export interface RpcConfig {
@@ -19,9 +19,9 @@ export interface BroadcastRpcConfig {
   message: string; // function name
 }
 
-export interface BroadcastSubscriberConfig<Request, Response> {
+export interface BroadcastSubscriberConfig<Request> {
   config: BroadcastRpcConfig;
-  onMessageReceived: (payload: Request) => Promise<Response> | Response;
+  onMessageReceived: (payload: Request) => any
 }
 
 export enum Publishers {

@@ -176,9 +176,7 @@ class RpcManager {
     return subscriber;
   }
 
-  async subscribeToBroadcast(
-    subscriberConfig: BroadcastSubscriberConfig<any, any>,
-  ) {
+  async subscribeToBroadcast(subscriberConfig: BroadcastSubscriberConfig<any>) {
     const subscriber = await this.getBroadcastSubscriber();
     await subscriber.subscribe(subscriberConfig);
   }

@@ -25,7 +25,7 @@ declare class RpcManager {
     private setBroadcastPublisher;
     publishBroadcast<Q>(payload: Q, config: BroadcastRpcConfig): Promise<void>;
     private getBroadcastSubscriber;
-    subscribeToBroadcast(subscriberConfig: BroadcastSubscriberConfig<any, any>): Promise<void>;
+    subscribeToBroadcast(subscriberConfig: BroadcastSubscriberConfig<any>): Promise<void>;
     private setupSubscribers;
     private setupRpcReplySubscriber;
 }

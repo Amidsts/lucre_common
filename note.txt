@@ -1,8 +1,8 @@
 Steps to build an npm package
 - pnpm build
 - push the code to a remote REPO
-- pnpm version <patch/minor/major>
-- pnpm publish
+- npm version <patch/minor/major>
+- npm publish
 
 To update package.json version use:
 
